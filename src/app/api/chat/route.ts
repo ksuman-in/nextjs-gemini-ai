@@ -13,7 +13,9 @@ export async function POST(req: Request) {
   } catch (error) {
     console.log("Error:", error);
     return new Response(
-      JSON.stringify({ error: "Something went wrong. Please try again." }),
+      JSON.stringify({
+        error: "Something went wrong. Please try again for this chat",
+      }),
       { status: 500 }
     );
   }
