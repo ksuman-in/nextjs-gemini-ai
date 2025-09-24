@@ -5,11 +5,12 @@ const uiComponents = [
   { name: "Chat", path: "/ui/chat" },
   { name: "Completion", path: "/ui/completion" },
   { name: "Stream", path: "/ui/stream" },
+  { name: "Structured Data", path: "/ui/structured-data" },
 ];
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4 dark:bg-gray-600 dark:text-white">
       <h1 className="text-3xl font-bold mb-6">Google Gemini AI Integration</h1>
       <div className="max-w-xl bg-white border rounded p-6 shadow mb-6">
         <p className="mb-4">
